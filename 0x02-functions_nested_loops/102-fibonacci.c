@@ -6,21 +6,25 @@
  */
 int main(void)
 {
-	int a, sum;
+	long int a, sum, n, p;
 
-	sum = 0;
+	n = 1;
+	p = 0;
 
 	for (a = 1; a <= 50; a++)
 	{
-		sum = a + sum;
+		sum = n + p;
+
 		if (sum == 1)
 		{
-		printf("%d", sum);
+		printf("%ld", sum);
 		}
 		else if (sum > 1)
 		{
-		printf(", %d", sum);
+		printf(", %ld", sum);
 		}
+		p = n;
+		n = sum;
 	}
 	printf("\n");
 	return (0);
