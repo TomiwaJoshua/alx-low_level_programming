@@ -15,7 +15,7 @@ int main(void)
 	for (a = 1; a <= 50; a++)
 	{
 		sum = n + p;
-		if (((sum % 2) == 0) || (sum < 4000000))
+		if (((sum % 2) == 0) && (sum < 4000000))
 		{
 		lib = lib + sum;
 		}
