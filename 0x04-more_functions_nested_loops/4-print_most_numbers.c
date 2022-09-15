@@ -8,11 +8,10 @@ void print_most_numbers(void)
 	char x[] = "01356789";
 	int r = 0;
 
-	while (r < 7)
+	while (r < 8)
 	{
-	putchar(x[r]);
+	_putchar(x[r]);
 	r++;
 	}
 	_putchar('\n');
-	return (0);
 }
