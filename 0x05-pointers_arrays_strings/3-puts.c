@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - calculates length of a string
+ * _puts - calculates length of a string
  * @str: string with length to be determined
  */
 void _puts(char *str)
