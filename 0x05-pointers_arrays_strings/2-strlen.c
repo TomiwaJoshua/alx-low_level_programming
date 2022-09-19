@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * a
+ * _strlen - calculates length of a string
+ * @s: string with length to be determined
  */
 int _strlen(char *s)
 {
@@ -9,7 +10,7 @@ int _strlen(char *s)
 
 	i = 0;
 
-	if (s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
