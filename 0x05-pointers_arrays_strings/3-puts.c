@@ -1,16 +1,25 @@
 #include "main.h"
 
 /**
- * _puts - calculates length of a string
- * @str: string with length to be determined
+ * _puts - prints a string
+ * @str: string to be printed
  */
 void _puts(char *str)
 {
-	int i, x;
+	int i, x, a;
 
-	for (i = x; str[i] != '\0'; i--)
+	i = 0;
+	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
+		i++;
 	}
+
+	x = i;
+
+	for (a = 0 ; a <= x; a++)
+	{
+		_putchar(str[a]);
+	}
+
 	_putchar('\n');
 }
