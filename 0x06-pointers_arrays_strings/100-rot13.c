@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * leet - function that encodes a string into leet
+ * rot13 - function that encodes a string into rot13
  * @str: string to be encoded
  * Return: returns the string str
  */
-char *leet(char *str)
+char *rot13(char *str)
 {
 	int a, b;
 
-	char *x = "AaEeOoTtLl";
-	char *y = "4433007711";
+	char *x = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+	char *y = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
 
 	for (a = 0; str[a] != '\0'; a++)
 	{
