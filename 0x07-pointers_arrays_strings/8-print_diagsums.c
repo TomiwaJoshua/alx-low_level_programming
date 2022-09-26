@@ -28,5 +28,5 @@ void print_diagsums(int *a, int size)
 		x--;
 		y++;
 	}
-	printf("%d, %d, \n", dg1, dg2);
+	printf("%d, %d\n", dg1, dg2);
 }
