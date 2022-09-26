@@ -20,13 +20,13 @@ void print_diagsums(int *a, int size)
 	{
 		dg1 += a[(size * x) + x];
 	}
-	x-=1;
+	x -= 1;
 
 	while (x >= 0 && y < size)
 	{
 		dg2 += a[(size * y) + x];
 		x--;
 		y++;
-	}	
+	}
 	printf("%d, %d, \n", dg1, dg2);
 }
