@@ -65,5 +65,7 @@ int _mysqrt(int x, int y, int z);
 int _sqrt_recursion(int n);
 int _chkprime(int x, int y);
 int is_prime_number(int n);
+int _palchk(char *x, int y);
+int is_palindrome(char *s);
 
 #endif
