@@ -28,8 +28,8 @@ int _palchk(char *x, int y)
 
 	if (*x == *(x + y))
 		return (_palchk(x + 1, y - 1));
-	else
-	return (0);	
+
+	return (0);
 }
 /**
  * is_palindrome - checks if a string is a palindrome
