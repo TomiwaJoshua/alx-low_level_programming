@@ -5,7 +5,6 @@
  * followed by a new line
  * @separator: the seperator between the printed numbers
  * @n: number of integers passed into the funtion
- * Return: returns 0
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
