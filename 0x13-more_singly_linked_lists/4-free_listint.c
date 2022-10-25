@@ -11,7 +11,7 @@ void free_listint(listint_t *head)
 
 	temp = (listint_t *)malloc(sizeof(listint_t));
 	if (!temp)
-		return (NULL);
+		return;
 
 	while (head)
 	{
