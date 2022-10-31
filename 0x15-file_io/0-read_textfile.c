@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 
-	file = open(filename, 0_RDONLY);
+	file = open(filename, O_RDONLY);
 
 	if (file == -1)
 	{
@@ -30,9 +30,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	actlet = read(file, buff, letters);
 	wwrite = write(STDOUT_FILENO, buff, actlet);
 
-	if (wwrite == -1 || wwrite != letters)
+	if (wwrite == -1 || wwrite != actlet)
 		return (0);
 
-	close(file)
+	close(file);
 	return (wwrite);
 }
